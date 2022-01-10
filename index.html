@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <title>JS Game</title>
+</head>
+<body>
+
+  <div class="app">
+    <div class="app__header">
+      <h1 id="time-header">Время игры: <span id="time">5.0</span></h1>
+      <h1 id="result-header" class="hide">Ваш результат: <span id="result"></span></h1>
+    </div>
+    <div class="form" id="form">
+      <input type="text" id="name" class="nameForm" placeholder="Введите имя...">
+      <button id="singUp" class="btn btn_form">Начать</button>
+    </div>
+    <div class="app__content hide">
+      <button class="btn" id="start">Играть</button>
+      <button class="btn btn2 hide" id="exit">Выйти</button>
+      <div class="game" id="game"></div>
+    </div>
+    <div class="app__footer">
+      <div class="input">
+        <label for="game-time">Время игры, (сек)</label>
+        <input type="number" id="game-time" min="5" step="1" value="5">
+        <button id="result_form" class="btn btn3">Результаты</button>
+      </div>
+    </div>
+    <div class="app__result">
+      <div class="userList user">
+        <h2>Имя</h2>
+        <h2>Счет</h2>
+        <h2>Дата</h2>
+        <h2>Время игры</h2>
+      </div>
+      <div id="info" class="result_form"></div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
